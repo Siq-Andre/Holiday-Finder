@@ -9,16 +9,27 @@ namespace HolidayFinder.Controllers
     {
         private static Holiday HolidayFinder = new Holiday();
 
-        [HttpPost("isHoliday")]
-        public ActionResult<string> IsHoliday([FromBody] DateTime InputDate)
+        [HttpPost("CheckForHoliday")]
+        public ActionResult<string> CheckForHoliday([FromBody] DateTime InputDate)
         {
-            if (HolidayFinder.IsFixedHoliday(InputDate) || HolidayFinder.IsMovableHoliday(InputDate))
+            if (HolidayFinder.IsHoliday(InputDate))
             {
                 return Ok("Is a holiday");
             }
 
             return Ok("Not a holiday");
             
+        }
+
+        [HttpPost("ChangeHolidayDate")]
+        public ActionResult<string> ChangeHolidayDate([FromBody] DateTime OldDate, DateTime NewDate)
+        {
+            if (HolidayFinder.changeHolidayDate(OldDate, NewDate))
+            {
+                return Ok("Holiday date changed");
+            }
+
+            return BadRequest("Provided date is not a holiday");
         }
     }
 }

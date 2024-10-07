@@ -14,6 +14,19 @@
         (12, 25)  // Christmas
         };
 
+        private static List<DateTime> NewHolidays = new List<DateTime>();
+        private static List<DateTime> NoLongerHolidays = new List<DateTime>();
+
+
+        public bool IsHoliday(DateTime date)
+        {
+            if ((!NoLongerHolidays.Contains(date) && (IsFixedHoliday(date) || IsMovableHoliday(date) || NewHolidays.Contains(date))))
+            {
+                return true;
+            }
+
+            return false;
+        }
         public bool IsFixedHoliday(DateTime date)
         {
             foreach (var holiday in fixedHolidays)
@@ -62,12 +75,18 @@
             return new DateTime(year, month, day);
         }
 
-        // Example usage
-        //public static void Main(string[] args)
-        //{
-        //    DateTime date = new DateTime(2024, 2, 12); // Example: Check if Feb 12, 2024 is a holiday
-        //    bool isHoliday = IsHoliday(date);
-        //    Console.WriteLine(isHoliday ? "This is a national holiday in Brazil." : "This is not a national holiday in Brazil.");
-        //}
+       public bool changeHolidayDate(DateTime OldDate, DateTime NewDate)
+        {
+            if (IsHoliday(OldDate))
+            {
+                NoLongerHolidays.Add(OldDate);
+                NewHolidays.Add(NewDate);
+
+                return true;
+            }
+            return false;
+            
+        }
+
     }
 }
