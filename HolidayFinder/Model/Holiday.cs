@@ -1,4 +1,6 @@
-﻿namespace HolidayFinder.Model
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace HolidayFinder.Model
 {
     public class Holiday
     {
@@ -86,6 +88,16 @@
             }
             return false;
             
+        }
+
+        public bool isBusinessDay(DateTime Date)
+        {
+            if (Date.DayOfWeek == DayOfWeek.Saturday || Date.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return false;
+            }
+
+            return true;
         }
 
     }

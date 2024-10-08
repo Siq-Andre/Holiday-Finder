@@ -12,12 +12,30 @@ namespace HolidayFinder.Controllers
         [HttpPost("CheckForHoliday")]
         public ActionResult<string> CheckForHoliday([FromBody] DateTime InputDate)
         {
+
+            string response = "";
+
             if (HolidayFinder.IsHoliday(InputDate))
             {
-                return Ok("Is a holiday");
+                response += "Is a holiday ";
+            }
+            else
+            {
+                response += "Is not a holiday ";
             }
 
-            return Ok("Not a holiday");
+            if (HolidayFinder.isBusinessDay(InputDate))
+            {
+                response += "and is a business day";
+            }
+
+            else
+            {
+                response += "and not a business day";
+            }
+
+            return Ok(response);
+
             
         }
 
