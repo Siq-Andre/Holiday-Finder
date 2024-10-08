@@ -22,9 +22,9 @@ namespace HolidayFinder.Controllers
         }
 
         [HttpPost("ChangeHolidayDate")]
-        public ActionResult<string> ChangeHolidayDate([FromBody] DateTime OldDate, DateTime NewDate)
+        public ActionResult<string> ChangeHolidayDate([FromBody] ChangeHolidayDateRequest request)
         {
-            if (HolidayFinder.changeHolidayDate(OldDate, NewDate))
+            if (HolidayFinder.changeHolidayDate(request.OldDate, request.NewDate))
             {
                 return Ok("Holiday date changed");
             }
