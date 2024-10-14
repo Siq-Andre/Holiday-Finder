@@ -10,31 +10,37 @@ namespace HolidayFinder.Controllers
         private static Holiday HolidayFinder = new Holiday();
 
         [HttpPost("CheckForHoliday")]
-        public ActionResult<string> CheckForHoliday([FromBody] DateTime InputDate)
+        public ActionResult<CheckForHolidayResponse> CheckForHoliday([FromBody] DateTime InputDate)
         {
 
-            string response = "";
+            var Response = new CheckForHolidayResponse();
+            Response.message = "";
+            Response.InputDate = InputDate;
 
             if (HolidayFinder.IsHoliday(InputDate))
             {
-                response += "Is a holiday ";
+                Response.IsHoliday = true;
+                Response.message += "Is a holiday ";
             }
             else
             {
-                response += "Is not a holiday ";
+                Response.IsHoliday = false;
+                Response.message += "Is not a holiday ";
             }
 
             if (HolidayFinder.isBusinessDay(InputDate))
             {
-                response += "and is a business day";
+                Response.IsBusinessDay = true;
+                Response.message += "and is a business day";
             }
 
             else
             {
-                response += "and not a business day";
+                Response.IsBusinessDay = false;
+                Response.message += "and not a business day";
             }
 
-            return Ok(response);
+            return Ok(Response);
 
             
         }
@@ -42,7 +48,7 @@ namespace HolidayFinder.Controllers
         [HttpPost("ChangeHolidayDate")]
         public ActionResult<string> ChangeHolidayDate([FromBody] ChangeHolidayDateRequest request)
         {
-            if (HolidayFinder.changeHolidayDate(request.OldDate, request.NewDate))
+            if (HolidayFinder.ChangeHolidayDate(request.OldDate, request.NewDate))
             {
                 return Ok("Holiday date changed");
             }

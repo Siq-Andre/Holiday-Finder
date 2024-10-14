@@ -77,7 +77,7 @@ namespace HolidayFinder.Model
             return new DateTime(year, month, day);
         }
 
-       public bool changeHolidayDate(DateTime OldDate, DateTime NewDate)
+       public bool ChangeHolidayDate(DateTime OldDate, DateTime NewDate)
         {
             if (IsHoliday(OldDate))
             {
