@@ -62,5 +62,12 @@ namespace HolidayFinder.Controllers
         {
             return ListOfHolidays;
         }
+
+        [HttpGet("GetHolidayPage")]
+        public List<HolidayDate> GetHolidayPage([FromBody] int Page)
+        {
+            var response = ListOfHolidays.showHolidays(Page);
+            return response;
+        }
     }
 }

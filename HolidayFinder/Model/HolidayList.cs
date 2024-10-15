@@ -17,6 +17,19 @@ namespace HolidayFinder.Model
             Holidays = HolidayDatesFromJson;
         }
 
+        public List<HolidayDate> showHolidays (int Page)
+        {
+            var AmountOfItemsPerPage = 5;
+            var SkipAmount = AmountOfItemsPerPage * Page;
+
+            var PageHolidays = Holidays
+                .Skip(SkipAmount)
+                .Take(AmountOfItemsPerPage)
+                .ToList();
+
+            return PageHolidays;
+        }
+
 
     }
 }
