@@ -2,7 +2,7 @@
 
 namespace HolidayFinder.Model
 {
-    public class Holiday
+    public class HolidayFinderMethods
     {
         private static readonly (int Month, int Day)[] fixedHolidays = new (int, int)[]
         {

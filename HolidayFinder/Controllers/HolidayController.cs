@@ -7,7 +7,7 @@ namespace HolidayFinder.Controllers
     [ApiController]
     public class HolidayController : Controller
     {
-        private static Holiday HolidayFinder = new Holiday();
+        private static HolidayFinderMethods HolidayFinder = new HolidayFinderMethods();
 
         [HttpPost("CheckForHoliday")]
         public ActionResult<CheckForHolidayResponse> CheckForHoliday([FromBody] DateTime InputDate)

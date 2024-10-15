@@ -1,0 +1,402 @@
+[
+  {
+    "Day": 1,
+    "Month": 1,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Ano Novo"
+  },
+  {
+    "Day": 25,
+    "Month": 2,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Carnaval"
+  },
+  {
+    "Day": 10,
+    "Month": 4,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Sexta-feira Santa"
+  },
+  {
+    "Day": 21,
+    "Month": 4,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Tiradentes"
+  },
+  {
+    "Day": 1,
+    "Month": 5,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Dia do Trabalhador"
+  },
+  {
+    "Day": 7,
+    "Month": 9,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Independência do Brasil"
+  },
+  {
+    "Day": 12,
+    "Month": 10,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Nossa Senhora Aparecida"
+  },
+  {
+    "Day": 2,
+    "Month": 11,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Finados"
+  },
+  {
+    "Day": 15,
+    "Month": 11,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Proclamação da República"
+  },
+  {
+    "Day": 25,
+    "Month": 12,
+    "Year": 2020,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Natal"
+  },
+  {
+    "Day": 1,
+    "Month": 1,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Ano Novo"
+  },
+  {
+    "Day": 16,
+    "Month": 2,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Carnaval"
+  },
+  {
+    "Day": 2,
+    "Month": 4,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Sexta-feira Santa"
+  },
+  {
+    "Day": 21,
+    "Month": 4,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Tiradentes"
+  },
+  {
+    "Day": 1,
+    "Month": 5,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Dia do Trabalhador"
+  },
+  {
+    "Day": 7,
+    "Month": 9,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Independência do Brasil"
+  },
+  {
+    "Day": 12,
+    "Month": 10,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Nossa Senhora Aparecida"
+  },
+  {
+    "Day": 2,
+    "Month": 11,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Finados"
+  },
+  {
+    "Day": 15,
+    "Month": 11,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Proclamação da República"
+  },
+  {
+    "Day": 25,
+    "Month": 12,
+    "Year": 2021,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Natal"
+  },
+  {
+    "Day": 1,
+    "Month": 1,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Ano Novo"
+  },
+  {
+    "Day": 1,
+    "Month": 3,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Carnaval"
+  },
+  {
+    "Day": 15,
+    "Month": 4,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Sexta-feira Santa"
+  },
+  {
+    "Day": 21,
+    "Month": 4,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Tiradentes"
+  },
+  {
+    "Day": 1,
+    "Month": 5,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Dia do Trabalhador"
+  },
+  {
+    "Day": 7,
+    "Month": 9,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Independência do Brasil"
+  },
+  {
+    "Day": 12,
+    "Month": 10,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Nossa Senhora Aparecida"
+  },
+  {
+    "Day": 2,
+    "Month": 11,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Finados"
+  },
+  {
+    "Day": 15,
+    "Month": 11,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Proclamação da República"
+  },
+  {
+    "Day": 25,
+    "Month": 12,
+    "Year": 2022,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Natal"
+  },
+  {
+    "Day": 1,
+    "Month": 1,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Ano Novo"
+  },
+  {
+    "Day": 21,
+    "Month": 2,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Carnaval"
+  },
+  {
+    "Day": 7,
+    "Month": 4,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Sexta-feira Santa"
+  },
+  {
+    "Day": 21,
+    "Month": 4,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Tiradentes"
+  },
+  {
+    "Day": 1,
+    "Month": 5,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Dia do Trabalhador"
+  },
+  {
+    "Day": 7,
+    "Month": 9,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Independência do Brasil"
+  },
+  {
+    "Day": 12,
+    "Month": 10,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Nossa Senhora Aparecida"
+  },
+  {
+    "Day": 2,
+    "Month": 11,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Finados"
+  },
+  {
+    "Day": 15,
+    "Month": 11,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Proclamação da República"
+  },
+  {
+    "Day": 25,
+    "Month": 12,
+    "Year": 2023,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Natal"
+  },
+  {
+    "Day": 1,
+    "Month": 1,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Ano Novo"
+  },
+  {
+    "Day": 13,
+    "Month": 2,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Carnaval"
+  },
+  {
+    "Day": 29,
+    "Month": 3,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Sexta-feira Santa"
+  },
+  {
+    "Day": 21,
+    "Month": 4,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Tiradentes"
+  },
+  {
+    "Day": 1,
+    "Month": 5,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Dia do Trabalhador"
+  },
+  {
+    "Day": 7,
+    "Month": 9,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Independência do Brasil"
+  },
+  {
+    "Day": 12,
+    "Month": 10,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Nossa Senhora Aparecida"
+  },
+  {
+    "Day": 2,
+    "Month": 11,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Finados"
+  },
+  {
+    "Day": 15,
+    "Month": 11,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Proclamação da República"
+  },
+  {
+    "Day": 25,
+    "Month": 12,
+    "Year": 2024,
+    "IsHoliday": true,
+    "IsBusinessDay": false,
+    "HolidayName": "Natal"
+  }
+]
