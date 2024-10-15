@@ -8,6 +8,7 @@ namespace HolidayFinder.Controllers
     public class HolidayController : Controller
     {
         private static HolidayFinderMethods HolidayFinder = new HolidayFinderMethods();
+        private static HolidayList ListOfHolidays = new HolidayList();
 
         [HttpPost("CheckForHoliday")]
         public ActionResult<CheckForHolidayResponse> CheckForHoliday([FromBody] DateTime InputDate)
@@ -54,6 +55,12 @@ namespace HolidayFinder.Controllers
             }
 
             return BadRequest("Provided date is not a holiday");
+        }
+
+        [HttpGet("GetListOfEveryHoliday")]
+        public HolidayList GetListOfEveryHoliday()
+        {
+            return ListOfHolidays;
         }
     }
 }
