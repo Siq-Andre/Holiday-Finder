@@ -8,5 +8,19 @@
         public bool IsHoliday { get; set; }
         public bool IsBusinessDay { get; set; }
         public string HolidayName { get; set; }
+
+        public HolidayDate (int day, int month, int year, string holydayName, HolidayFinderMethods holidayFinder)
+        {
+            Day = day;
+            Month = month;
+            Year = year;
+            HolidayName = holydayName;
+
+            DateTime date = new DateTime (year, month, day);
+
+            IsHoliday = holidayFinder.IsHoliday(date);
+            IsBusinessDay = holidayFinder.isBusinessDay(date);
+
+        }
     }
 }
