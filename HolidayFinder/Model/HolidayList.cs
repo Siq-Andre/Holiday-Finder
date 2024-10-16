@@ -30,6 +30,20 @@ namespace HolidayFinder.Model
             return PageHolidays;
         }
 
+        public string AddHolidaysToList(int day, int month, int year, string holydayName, HolidayFinderMethods holidayFinderMethods)
+        {
+            var NewHoliday = new HolidayDate(day, month, year, holydayName);
+            var response = "";
+
+            if (Holidays.Contains(NewHoliday))
+            {
+                response = "This holiday is already on the list";
+                return response;
+            }
+            Holidays.Add(NewHoliday);
+            response = "Holiday added to the list";
+            return response;
+        }
 
     }
 }
