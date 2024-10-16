@@ -69,5 +69,13 @@ namespace HolidayFinder.Controllers
             var response = ListOfHolidays.showHolidays(Page);
             return response;
         }
+
+        [HttpPost("AddHoliday")]
+        public string AddHolyday([FromBody] AddHolidayRequest HolidayData)
+        {
+            var response = ListOfHolidays.AddHolidaysToList(HolidayData.Day, HolidayData.Month, HolidayData.Year, HolidayData.HolidayName);
+           
+            return response;
+        }
     }
 }

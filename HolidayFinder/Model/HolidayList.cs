@@ -30,7 +30,7 @@ namespace HolidayFinder.Model
             return PageHolidays;
         }
 
-        public string AddHolidaysToList(int day, int month, int year, string holydayName, HolidayFinderMethods holidayFinderMethods)
+        public string AddHolidaysToList(int day, int month, int year, string holydayName)
         {
             var NewHoliday = new HolidayDate(day, month, year, holydayName);
             var response = "";

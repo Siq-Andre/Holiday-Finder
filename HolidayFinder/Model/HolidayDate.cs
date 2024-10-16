@@ -9,6 +9,8 @@
         public bool IsBusinessDay { get; set; }
         public string HolidayName { get; set; }
 
+        public HolidayDate() { }
+
         public HolidayDate (int day, int month, int year, string holydayName)
         {
             HolidayFinderMethods holidayFinder = new HolidayFinderMethods ();
